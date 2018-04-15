@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<title>myuri</title>
+</head>
+<style type="text/css">
+li{list-style:none;}
+</style>
+<script type="text/javascript">
+function open_app(){
+    var url = "myuri://";
+    url += $('#ip').val() + '/';
+    url += $('#port').val() + '/';
+    url += $('#username').val() + '/';
+    url += $('#password').val();
+    // console.log(url);
+    window.location.assign(url);
+}
+</script>
+<body>
+<ul>
+	<li>
+		<label>ip:</label>
+		<input type="text" id="ip">
+	</li>
+	<li>
+		<label>port:</label>
+		<input type="text" id="port">
+	</li>
+	<li>
+		<label>username:</label>
+		<input type="text" id="username">
+	</li>
+	<li>
+		<label>password:</label>
+		<input type="text" id="password">
+	</li>
+	<li>
+		<a href="javascript:open_app();">open app</a>
+	</li>
+</ul>
+
+</body>
+</html>
