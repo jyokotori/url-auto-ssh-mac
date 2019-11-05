@@ -1,12 +1,12 @@
-##### Applescript脚本参考了[shuttle](https://github.com/fitztrev/shuttle),go参考了[autossh](https://github.com/islenbo/autossh)
+## Overview
+- If you just want to ssh without entering your password every time, you can see [autossh](https://github.com/kotorimiao/autossh), [sshpass](https://www.google.com/search?q=sshpass) and so on.
 
-##### 如何打开
+### 如何打开
 - 解压myuri.zip
 - 首次使用点击一下myuri.app(因为安全原因,可能需要确认app来源)
 - 打开test.html
 
 ##### 如何自己打包一个app,这里用的是脚本编辑器
-![](https://github.com/kotorimiao/url-auto-ssh-mac/blob/master/sample.png)
 - 查看applescript代码,可以用脚本编辑器打开myuri.applescript
 - js代码查看test.html
 - app的配置
@@ -37,3 +37,5 @@ tell application "System Events"
 	keystroke return
 end tell
 ```
+
+##### 其中代码中的Applescript脚本参考了[shuttle](https://github.com/fitztrev/shuttle), go参考了[autossh](https://github.com/islenbo/autossh)
